@@ -8,11 +8,9 @@
 
 function encript(){
 
-    let regExp = new RegExp('^[0-9-?¨*]+$')
+  
     var valor = document.getElementById('text_input').value;
-    if (regExp.test(valor)){
-        return alert('Debe ingresar una palabra o palabras para ejecutar el programa')
-    }
+    
     var nuevo = ""; 
     if (valor == "" ){
         
@@ -54,12 +52,16 @@ function unencript(){
 
 function copyToClipBoard1() {
 
-    var valor = document.getElementById('results');
+  
+    var valor = document.getElementById('results')
     
     valor.select();
     document.execCommand('copy');
-
     alert("Copiado");
+   
+    
+  
+
 }
 
 function copyToClipBoard2() {
